@@ -23,7 +23,7 @@ const lineDepthY = 120 /* Height of the line for child nodes */
 
 // Colors
 const backgroundColor = '#fff'
-const borderColor = '#ffffff'
+const borderColor = 'rgb(250, 140, 21)'
 const nameColor = '#222d38'
 const titleColor = '#617080'
 const reportsColor = '#92A0AD'
