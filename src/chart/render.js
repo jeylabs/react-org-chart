@@ -168,11 +168,11 @@ function render(config) {
       }
     })
 
-  iconLink({
-    svg: nodeLink,
-    x: nodeWidth - 28,
-    y: nodeHeight - 28
-  })
+  // iconLink({
+  //   svg: nodeLink,
+  //   x: nodeWidth - 28,
+  //   y: nodeHeight - 28
+  // })
 
   // Transition nodes to their new position.
   const nodeUpdate = node
