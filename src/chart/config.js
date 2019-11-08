@@ -1,5 +1,6 @@
 const animationDuration = 350
 const shouldResize = true
+const shouldZoom = true
 
 // Nodes
 const nodeWidth = 240
