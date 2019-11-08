@@ -106,7 +106,7 @@ function init(options) {
 
   // Defined zoom behavior
   const zoom = d3.behavior
-    .zoom()
+    .zoom(shouldResize)
     // Define the [zoomOutBound, zoomInBound]
     .scaleExtent([0.4, 2])
     .duration(50)
