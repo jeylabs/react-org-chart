@@ -4,6 +4,7 @@ module.exports = renderUpdate
 
 // Update the rendered node positions triggered by zoom
 function renderUpdate({ svg }) {
+  return () =>{};
   return () => {
     svg.attr(
       'transform',
