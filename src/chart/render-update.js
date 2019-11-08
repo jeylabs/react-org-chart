@@ -3,8 +3,10 @@ const d3 = require('d3')
 module.exports = renderUpdate
 
 // Update the rendered node positions triggered by zoom
-function renderUpdate({ svg }) {
-  return () =>{};
+function renderUpdate({ svg, shouldResize }) {
+  if(!shouldResize){
+    return () =>{};
+  }
   return () => {
     svg.attr(
       'transform',
