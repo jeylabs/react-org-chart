@@ -104,27 +104,6 @@ function init(options) {
     config.svg = svg
     config.svgroot = svgroot
     config.render = render
-    if (shouldZoom) {
-        // Defined zoom behavior
-        const zoom = d3.behavior
-            .zoom()
-            // Define the [zoomOutBound, zoomInBound]
-            .scaleExtent([0.4, 2])
-            .duration(50)
-            .on('zoom', renderUpdate(config))
-
-        // Attach zoom behavior to the svg root
-        svgroot.call(zoom)
-
-        // Define the point of origin for zoom transformations
-        zoom.translate([
-            parseInt(
-                childrenWidth + (elemWidth - childrenWidth * 2) / 2 - margin.left / 2
-            ),
-            20
-        ])
-    }
-
 
     // Add listener for when the browser or parent node resizes
     const resize = () => {
@@ -137,7 +116,7 @@ function init(options) {
     }
 
     if (shouldResize) {
-        global.addEventListener('resize', resize)
+        // global.addEventListener('resize', resize)
     }
 
     // Start initial render
